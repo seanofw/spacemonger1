@@ -1,0 +1,330 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 239, 145
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,94,124,50,14
+    ICON            ID_SPACEMONGER,IDC_STATIC,7,9,20,20
+    LTEXT           "SpaceMonger Version 1.4.0",IDC_STATIC,37,9,95,10
+    LTEXT           "Copyright © 1998, 1999, 2000 by Sean Werkema",
+                    IDC_STATIC,37,18,168,8
+    LTEXT           "",IDC_STATIC_FREEWARE,37,41,195,10
+    LTEXT           "",IDC_STATIC_WARRANTY,37,55,195,34
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,37,34,195,1
+    LTEXT           "",IDC_STATIC_EMAIL,37,93,195,18
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,37,115,195,1
+END
+
+IDD_OPEN_DIALOG DIALOG DISCARDABLE  0, 0, 221, 170
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,113,151,50,14
+    PUSHBUTTON      "",IDCANCEL,58,151,50,14
+    CONTROL         "",IDC_DRIVE_LIST,"SysListView32",LVS_SINGLESEL | 
+                    LVS_SORTASCENDING | LVS_AUTOARRANGE | WS_BORDER | 
+                    WS_TABSTOP,7,5,207,139
+END
+
+IDD_SCAN_DIALOG DIALOGEX 0, 0, 250, 54
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "",IDCANCEL,203,24,40,14
+    LTEXT           "",IDC_STATIC_FILESFOUND,103,21,66,8
+    LTEXT           "",IDC_STATIC_FOLDERSFOUND,103,30,66,8
+    LTEXT           "",IDC_PATH,7,4,236,9
+    LTEXT           "0",IDC_FILES,171,21,30,8
+    LTEXT           "0",IDC_FOLDERS,171,30,30,8
+    CONTROL         "",IDC_LOAD_PROGRESS,"msctls_progress32",WS_BORDER,7,44,
+                    236,6
+END
+
+IDD_SETTINGS DIALOG DISCARDABLE  0, 0, 280, 213
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_LANG,191,8,82,101,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DENSITY,42,18,90,85,CBS_DROPDOWNLIST | WS_GROUP | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_BIAS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | 
+                    WS_TABSTOP,39,49,95,17
+    COMBOBOX        IDC_FILE_COLOR,191,40,72,143,CBS_DROPDOWNLIST | WS_GROUP | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FOLDER_COLOR,191,55,72,142,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_SHOW_NAME_TIPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,24,85,104,10
+    EDITTEXT        IDC_NAMETIP_DELAY,59,96,27,12,ES_NUMBER | WS_GROUP
+    CONTROL         "",IDC_SHOW_ROLLOVER_BOX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,126,119,8
+    CONTROL         "",IDC_SHOW_INFO_TIPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,144,85,104,10
+    CONTROL         "",IDC_INFOTIP_PATH,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,153,96,50,10
+    CONTROL         "",IDC_INFOTIP_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,205,96,50,10
+    CONTROL         "",IDC_INFOTIP_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,106,50,10
+    CONTROL         "",IDC_INFOTIP_SIZE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,205,106,50,10
+    CONTROL         "",IDC_INFOTIP_ICON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,153,116,50,10
+    CONTROL         "",IDC_INFOTIP_ATTRIB,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,205,116,50,10
+    EDITTEXT        IDC_INFOTIP_DELAY,182,129,27,12,ES_NUMBER | WS_GROUP
+    CONTROL         "",IDC_AUTO_RESCAN,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,24,160,120,10
+    CONTROL         "",IDC_DISABLE_DELETE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,171,120,10
+    CONTROL         "",IDC_ANIMATED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    144,160,120,10
+    CONTROL         "",IDC_SAVE_POS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    144,171,120,10
+    PUSHBUTTON      "",IDCANCEL,86,194,50,14,WS_GROUP
+    DEFPUSHBUTTON   "",IDOK,142,194,50,14
+    LTEXT           "",IDC_STATIC_DENSITY,14,20,27,8
+    LTEXT           "",IDC_STATIC_FILES,160,43,30,8
+    LTEXT           "",IDC_STATIC_BIAS,14,55,24,8
+    CTEXT           "",IDC_STATIC_HORZ,35,40,21,8
+    CTEXT           "",IDC_STATIC_VERT,118,40,21,8
+    CTEXT           "",IDC_STATIC_EQUAL,76,40,21,8
+    LTEXT           "",IDC_STATIC_FOLDERS,160,58,30,8
+    LTEXT           "",IDC_STATIC_INFOTIP1,153,131,28,8
+    LTEXT           "",IDC_STATIC_INFOTIP2,212,131,25,8
+    GROUPBOX        "",IDC_STATIC_LAYOUT,7,4,139,68
+    GROUPBOX        "",IDC_STATIC_DISPLAYCOLORS,153,29,120,43
+    GROUPBOX        "",IDC_STATIC_TOOLTIPS,7,74,266,73
+    GROUPBOX        "",IDC_STATIC_MISCOPTIONS,6,149,267,38
+    LTEXT           "",IDC_STATIC_NAMETIP1,30,98,28,8
+    LTEXT           "",IDC_STATIC_NAMETIP2,89,98,25,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_OPEN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_SCAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 273
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_SPACEMONGER          ICON    DISCARDABLE     "res\\SpaceMonger.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_EN TOOLBAR DISCARDABLE  44, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_REFRESH
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOM_FULL
+    BUTTON      ID_VIEW_ZOOM_IN
+    BUTTON      ID_VIEW_ZOOM_OUT
+    SEPARATOR
+    BUTTON      ID_VIEW_FREE
+    SEPARATOR
+    BUTTON      ID_FILE_RUN
+    BUTTON      ID_FILE_DELETE
+    SEPARATOR
+    BUTTON      ID_SETTINGS
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBAR_FR TOOLBAR DISCARDABLE  44, 15
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_REFRESH
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOM_FULL
+    BUTTON      ID_VIEW_ZOOM_IN
+    BUTTON      ID_VIEW_ZOOM_OUT
+    SEPARATOR
+    BUTTON      ID_VIEW_FREE
+    SEPARATOR
+    BUTTON      ID_FILE_RUN
+    BUTTON      ID_FILE_DELETE
+    SEPARATOR
+    BUTTON      ID_SETTINGS
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SCAN1               BITMAP  DISCARDABLE     "res\\scan1.bmp"
+IDB_SCAN2               BITMAP  DISCARDABLE     "res\\scan2.bmp"
+IDB_SCAN3               BITMAP  DISCARDABLE     "res\\scan3.bmp"
+IDB_SCAN4               BITMAP  DISCARDABLE     "res\\scan4.bmp"
+IDR_TOOLBAR_EN          BITMAP  DISCARDABLE     "res\\toolbar_en.bmp"
+IDR_TOOLBAR_FR          BITMAP  DISCARDABLE     "res\\toolbar_fr.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,4,0,1
+ PRODUCTVERSION 1,4,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Visit http://www.werkema.com/software/spacemonger.html for the latest version\0"
+            VALUE "CompanyName", "65 Systems\0"
+            VALUE "FileDescription", "SpaceMonger Program File\0"
+            VALUE "FileVersion", "1, 4, 0, 1\0"
+            VALUE "InternalName", "SpaceMonger\0"
+            VALUE "LegalCopyright", "Copyright © 1997-2000 Sean Werkema\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SpaceMonger.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SpaceMonger\0"
+            VALUE "ProductVersion", "1, 4, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
